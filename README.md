@@ -1,2 +1,2 @@
 # Travl
-Single page design
+Reponsive Single Page Design 
