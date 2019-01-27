@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet');
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+    background: url('landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#eda597;
+    color:white;
+}
+.container{
+    max-width: 1005px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+.logo p{
+    font-size: 2.5em;
+    font-weight: 700;
+
+}
+header{
+    text-align: center;
+}
+nav{
+    margin: 2em auto 0;
+    max-width:600px; 
+}
+nav  ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+}
+nav  ul  li {
+    list-style: none;
+}
+nav  ul  li  a{
+    font-size: 1.25em;
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-flow: column;
+}
+.hero-container{
+    text-align:center;
+    
+}
+.hero-container h1 {
+    font-size: 2.5em;
+    font-weight: 600px;
+}
+
+.hero-container p{
+    font-size:1.2em;
+    font-weight: 600px;
+    max-width: 500px;
+    line-height: 1.8em;
+    margin: 3em auto;
+
+}
+
+.hero-container p:before{
+    content:"";
+    display: block;
+    width:120px;
+    border: 2px solid yellow;
+    margin: 1em auto;
+
+}
+
+.hero-container a{
+    background: orange;
+    padding: 1em 3em;
+    border-radius: 50px;
+    color:white;
+    text-decoration: none;
+    font-size: 1.375em;
+    font-weight: 700px;
+    transition: 0.2s;
+
+}
+
+.hero-container a:hover {
+    background-color:white;
+    color:orange;
+}
+
+
+
+@media screen and (min-width:820px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-flow:wrap;
+        align-items: center;
+    }
+    nav {
+        margin:0;
+
+    }
+    nav ul{
+        margin:0;
+        padding:0;
+        display:flex;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 0.5em 2em;
+    }
+    nav ul li a {
+        font-size: 1.375em;
+        color:white;
+        font-weight:700;
+        text-decoration: none;
+    }
+    .highlight{
+        border: 3px solid yellow;
+        border-radius: 50px;
+    }
+    main{
+        flex-flow:row;
+
+    }
+    .hero-container{
+        text-align:left;
+    }
+    .hero-container h1{
+        font-size:4em;
+    }
+    .hero-container p:before{
+        margin: 1em 0;
+    }
+    .hero-container p{
+        font-size:1.3em;
+        padding:0;
+        margin: 0 0 3em 0;
+
+    }
+    .hero-container a {
+        background-color: purple;
+        transition: 0.2s;
+    }
+    .hero-container a:hover {
+        background-color:white;
+        color:purple;
+    }
+
+}
